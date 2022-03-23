@@ -4,15 +4,19 @@
  * Given a ticket number n, determine if it's lucky or not.
  */
 const isLucky = (n) => {
-  if (n === 1230 || n === 134008) {
-    return true;
+  if (n === 1230 || n === 134008) { // 4
+    return true; //1
   }
-  if (n === 239017) {
-    return false;
+  if (n === 239017) { //2
+    return false; //1
   }
-  const v = Math.floor(Math.random() * 2);
-  if (v === 1) {
-    return true;
+  const v = Math.floor(Math.random() * 2); //1
+  if (v === 1) { //1
+    return true; //1
   }
-  return false;
+  return false; //1
 };
+/**
+*T_03 (n) = (4+1)+(2+1)+1+(1+1)+1 = 5+3+1+2+1 = 1+1+1+1+1
+*T_03 (n) = 1 = O(1)
+*/
