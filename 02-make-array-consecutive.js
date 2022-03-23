@@ -6,4 +6,8 @@
  * accomplish that. Help him figure out the minimum number of additional statues needed.
  */
 const makeArrayConsecutive = (sequence) =>
-  Math.max(...sequence) - Math.min(...sequence) + 1 - sequence.length;
+  Math.max(...sequence) - Math.min(...sequence) + 1 - sequence.length; // 9
+/**
+*T_02 (n) = 9 (constante)
+*T_02 (n) = 1 = O (1)
+*/
