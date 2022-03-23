@@ -11,4 +11,8 @@
  * For inputString = "0ss", the output should be
  * solution(inputString) = '0'.
  */
-const firstDigit = (inputString) => inputString.match(/\d/)[0];
+const firstDigit = (inputString) => inputString.match(/\d/)[0]; //3*inputString
+/*
+*T_07 (n) = 3*i = 1*n
+*T_07 (n) = n = O (n) (linear)
+*/
