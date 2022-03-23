@@ -8,7 +8,11 @@
  */
 const knapsackLight = (value1, weight1, value2, weight2, maxW) =>
   Math.max(
-    maxW >= weight1 && value1,
-    maxW >= weight2 && value2,
-    maxW >= weight1 + weight2 && value1
-  );
+    maxW >= weight1 && value1, // 4n
+    maxW >= weight2 && value2, // 4n
+    maxW >= weight1 + weight2 && value1 // 5n
+  ); // 1
+/*
+*T_08 (n) = 4n+4n+5n
+*T_08 (n) = 13n = n = O (n) linear
+*/
