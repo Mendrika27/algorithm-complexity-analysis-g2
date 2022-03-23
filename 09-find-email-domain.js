@@ -6,4 +6,8 @@
  * Here you can look at several examples of correct and incorrect email addresses.
  * Given a valid email address, find its domain part.
  */
-const findEmailDomain = (address) => address.split("@").pop();
+const findEmailDomain = (address) => address.split("@").pop();// 3*address
+/*
+*T_09 (n) = 3*a = 1*n 
+*T_09 (n) = n = O (n) linear
+*/
