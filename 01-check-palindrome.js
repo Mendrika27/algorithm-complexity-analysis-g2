@@ -1,6 +1,6 @@
 const checkPalindrome = (inputString) =>
-  inputString === inputString.split("").reverse().join(""); // 4
+  inputString === inputString.split("").reverse().join(""); // 5*inputString
 /**
-*T_01 (n) = 4 (constante)
-*T_01 (n) = 1 = 0 (1)
+*T_01 (n) = 5*i = 1*n
+*T_01 (n) = n = 0 (n) (linear)
 */
