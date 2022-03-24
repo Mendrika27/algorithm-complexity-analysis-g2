@@ -4,7 +4,7 @@
  * Given two arrays a and b, check whether they are similar.
  */
 const areSimilar = (a, b) => {
-  for (var arr = [], i = 0; i < a.length; i++) { //5a.length
+  for (var arr = [], i = 0; i < a.length; i++) { //8+a.length
     if (a[i] !== b[i]) { //5
       arr.push(a[i], b[i]);//5
     }
@@ -12,6 +12,6 @@ const areSimilar = (a, b) => {
   return arr.length < 5 && new Set(arr).size < 3; //4
 };
 /*
-*T_04 (n) = 5*a(5+5)+4 = 5*a(10)+4 = 1*n(1)+1 = n
+*T_04 (n) = 8+a(5+5)+4 = 8+a(10)+4 = 1+n(1)+1 = n
 *T_04 (n) = n = O (n) (linear)
 */
