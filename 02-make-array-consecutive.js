@@ -8,6 +8,12 @@
 const makeArrayConsecutive = (sequence) =>
   Math.max(...sequence) - Math.min(...sequence) + 1 - sequence.length; // 9
 /**
-*T_02 (n) = 9 (constante)
-*T_02 (n) = 1 = O (1)
+*Math.max(..sequence) => 1*sequence  = 1*s
+*"-" = 1 for the substraction
+*Math.min(..sequence) => 1*sequence = 1*s
+*"+1" = 1 for the addition of a constant
+*"-" = 1 for the substraction
+*sequence.length = 1*s because sequence is a variable
+*T_02 (n) = 1*s + 1 + 1*s + 1 + 1*s = 3*s + 1 = 1*s + 1 = s = n
+*T_02 (n) = n = O (n) (linear)
 */
