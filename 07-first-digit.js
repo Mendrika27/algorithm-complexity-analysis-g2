@@ -1,7 +1,7 @@
 /*
  * Find the leftmost digit that occurs in a given string.
  *
- * Example
+ * Example 
  *
  * For inputString = "var_1__Int", the output should be solution(inputString) = '1';
  *
