@@ -10,13 +10,13 @@ const isLucky = (n) => {
   if (n === 239017) { //2
     return false; //1
   }
-  const v = Math.floor(Math.random() * 2); //1
-  if (v === 1) { //1
+  const v = Math.floor(Math.random() * 2); //1 + n
+  if (v === 1) { // v + 1 = 1 + n + 1
     return true; //1
   }
   return false; //1
 };
 /**
-*T_03 (n) = (4+1)+(2+1)+1+(1+1)+1 = 5+3+1+2+1 = 1+1+1+1+1
-*T_03 (n) = 1 = O(1)
+*T_03 (n) = ( 4 + 1 ) + ( 2 + 1 ) + 1 + ( 1 + n + 1 )( 1 ) + 1 = 5 + 3 + 1 + 2+n + 1 = 1+1+1+1+n+1
+*T_03 (n) = n = O(n) (linear)
 */
