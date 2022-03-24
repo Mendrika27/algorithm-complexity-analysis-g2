@@ -1,4 +1,4 @@
-const checkPalindrome = (inputString) =>
+const checkPalindrome = (inputString) => 
   inputString === inputString.split("").reverse().join(""); // 5*inputString
 /**
 *T_01 (n) = 5*i = 1*n
